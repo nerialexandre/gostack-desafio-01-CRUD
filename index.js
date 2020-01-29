@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-// mostra numero de requisicoes
+// mostra numero de requisicoes feitas
 app.use((req, res, next) => {
     numberRequests++;
     console.log(`Requisição numero: ${numberRequests}`);
